@@ -12,7 +12,7 @@ public struct BKRideModel {
     public let distance: Double
     public let startAddress: String
     public let endAddress: String
-    public let coordinateList: [Double]
+    public let coordinateList: [BKCoordinateModel]
     
     public init() {
         self.time = -1
@@ -27,7 +27,7 @@ public struct BKRideModel {
         distance: Double,
         startAddress: String,
         endAddress: String,
-        coordinateList: [Double]
+        coordinateList: [BKCoordinateModel]
     ) {
         self.time = time
         self.distance = distance
